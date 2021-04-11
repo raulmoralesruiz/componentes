@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="/" color="primary"></ion-back-button>      
+    </ion-buttons>
+
+    <ion-title color="primary">Avatar</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <!-- <img src="/assets/raul.png" /> -->
+        <ion-img src="/assets/raul.png"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-chip color="primary" outline="true" *ngFor="let item of [1,1,1,1]; let i=index">
+    <ion-avatar>
+      <ion-img src="/assets/raul.png"></ion-img>
+    </ion-avatar>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="/assets/raul.png"></ion-img>
+      </ion-avatar>
+      <ion-label>Raúl</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
